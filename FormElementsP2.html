@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charse = "utf-8">
+        <meta name="description" content = "HTML For Beginners">
+        <title>Form Part 2 Button, File, Image, Hidden, Reset, Radio</title>
+        <link rel ="stylesheet" href = "style.css">
+        <style></style>
+        <script>
+            function SayHello()
+            {
+               alert("Hello HTML");
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <form name = "register">
+            <label>Username</label>
+            <input type = "text" name = "username" value = "" placeholder = "Type Your Name" maxlength="10" >
+            <br>
+
+            <label>Password</label>
+            <input type = "password" name = "password">
+            <br>
+
+            <label>Upload Your CV</label>
+            <input type = "file">
+            <br>
+
+            
+            <input type = "checkbox">
+            <label>Remember Me</label>
+            <br>
+
+            <label>Choose Your Browser</label> <br>
+            <input type = "radio" name = "mobile1" value="iPhone">iPhone <br>
+            <input type = "radio" name = "mobile2" value="Samsung"> Samsung <br>
+            <input type = "radio" name = "mobile3" value="Nokia">  Nokia <br>
+            <br>
+
+            <label>Choose Your Mobile</label> <br>
+            <input type = "radio" name = "browser" value="Chrome">Google Chrome <br>
+            <input type = "radio" name = "browser" value="FireFox"> Mozilla Firefox <br>
+            <input type = "radio" name = "browser" value="Opera">  Opera <br>
+            <br>
+
+            <input type = "hidden" value = "testing">
+
+            <input type = "button" name = "Say Hello" value = "Say Hello" onclick="SayHello()">
+
+            <input type = "submit" value = "Sign Up">
+
+            <input type = "reset"  value = "Restore Default">
+
+            <input type="image" src = "http://placehold.it/100/100" alt = "Submit">
+
+
+
+
+            
+
+           
+
+
+
+
+            <label></label>
+
+        </form>
+    </body>
+</html>

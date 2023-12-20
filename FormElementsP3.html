@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charse = "utf-8">
+        <meta name="description" content = "HTML For Beginners">
+        <title>Form Part 3 Textarea, Fieldset, Legend, Select, Option</title>
+        <link rel ="stylesheet" href = "style.css">
+        <style></style>
+        <script>
+            function SayHello()
+            {
+               alert("Hello HTML");
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <form name = "register">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Username</label>
+                <input type = "text" name = "username" value = "" placeholder = "Type Your Name" maxlength="10" >
+                <br>
+
+                <label>Password</label>
+                <input type = "password" name = "password">
+                <label>Your Message</label><br>
+                <textarea rows="6" cols= "60" readonly>This Note You Can't Edit </textarea>
+                <br>
+
+                <label>Upload Your CV</label>
+                <input type = "file">
+                <br>
+
+            
+                <input type = "checkbox">
+                <label>Remember Me</label>
+                <br>
+            </fieldset>
+            <br>
+
+            
+
+            <fieldset>
+                <legend>Your Favorite Browser</legend>
+                <label>Choose Your Browser</label> <br>
+                <input type = "radio" name = "mobile1" value="iPhone">iPhone <br>
+                <input type = "radio" name = "mobile2" value="Samsung"> Samsung <br>
+                <input type = "radio" name = "mobile3" value="Nokia">  Nokia <br>
+                <br>
+
+                <label>Choose Your Mobile</label> <br>
+                <input type = "radio" name = "browser" value="Chrome">Google Chrome <br>
+                <input type = "radio" name = "browser" value="FireFox"> Mozilla Firefox <br>
+                <input type = "radio" name = "browser" value="Opera">  Opera <br>
+                <br>
+            </fieldset>
+
+
+            <input type = "hidden" value = "testing">
+
+
+            <fieldset>
+                <legend>Send Options</legend>
+
+                <select name = "time" >
+                    <optgroup label = "Near Time" disabled>
+                        <option disabled value = "1">Now</option>
+                        <option value = "2">Tomorrow</option>
+                        <option value = "3">After A Week</option>
+                    </optgroup>
+
+                    <optgroup label = "Far Time">
+                        <option value = "4">Year</option>
+                        <option value = "5">10 year</option>
+                        <option value = "6">20 Year</option>
+                    </optgroup>
+                </select>
+                <input type = "button" name = "Say Hello" value = "Say Hello" onclick="SayHello()">
+
+                <input type = "submit" value = "Sign Up">
+
+                <input type = "reset"  value = "Restore Default">
+            
+            </fieldset> 
+
+        </form>
+    </body>
+</html>

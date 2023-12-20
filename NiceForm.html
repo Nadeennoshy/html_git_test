@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "description" content = "HTML For Beginners">
+        <title>Create A Nice Form</title>
+        <link rel = "stylesheet" href = "style.css">
+        <style>
+            body 
+            {
+                background:#EFEFEF; 
+                font-family: Arial,Tahoma;
+            
+            }
+            fieldset
+            {
+                background:#FFF;
+                border:1 px solid #CCC;
+                padding :20px;
+                margin-bottom : 20 px;
+                width:500px;
+                margin:20px auto
+            }
+            legend
+            {
+              background: #FFF;
+              border : 1 px solid #CCC;
+              padding : 10 px;  
+            }
+            
+            label 
+            {
+                margin-bottom:10px;
+                display:block;
+            }
+            input 
+            {
+                margin-bottom:10px;
+            }
+
+            input[type = "text"],
+            input[type = "password"],
+            textarea
+
+            {padding : 8px; width:300px; display:block}
+
+            hr { border : 1px solid #EEE}
+
+            textarea
+            {
+                height : 200px;
+                margin-bottom:10px;
+                
+
+            }
+            
+        </style>
+        <script></script>       
+    </head>
+    <body>
+        <form name = "register">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Username</label>
+                <input type = "text" name = "username">
+                <label>Password</label>
+                <input type = "password" name = "password">
+                <label>E-mail</label>
+                <input type = "text" name = "email">
+                <label>Gender</label>
+                <select name = "Gender">
+                    <option name = "Male">Male</option>
+                    <option name = "Female">Female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Your Favorites</legend>
+                <label>Your Favourites Text Editors</label>
+                <input type = "radio" name = "editors">komodoEdit<br>
+                <input type = "radio" name = "editors">Netbeans<br>
+                <input type = "radio" name = "editors">SublimeText
+                <hr>
+                <label>Your Favourites Browser</label>
+                <input type = "radio" name = "browser">Google Chrome<br>
+                <input type = "radio" name = "browser">Mozilla Firefox<br>
+                <input type = "radio" name = "browser">Opera
+                <hr>
+                <label>Your Favourites Operating System</label>
+                <input type = "checkbox">MAC OSX<br>
+                <input type = "checkbox">Linux<br>
+                <input type = "checkbox">Windows
+            </fieldset>
+            <fieldset>
+                <legend>Your Message</legend>
+                <textarea></textarea>
+                <input type = "submit" value = "Send Your Data">
+            </fieldset>
+            
+
+        </form>
+    </body>
+</html>
